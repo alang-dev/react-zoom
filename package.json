@@ -2,7 +2,6 @@
   "name": "alang-react-zoom",
   "version": "1.0.2",
   "description": "Zoom SDK integration in React Typescript",
-  "main": "dist/cjs/index.js",
   "scripts": {
     "rollup": "rollup -c"
   },
@@ -21,6 +20,8 @@
     "url": "https://github.com/alang-dev/react-zoom/issues"
   },
   "homepage": "https://github.com/alang-dev/react-zoom#readme",
+
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
