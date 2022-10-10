@@ -1,10 +1,10 @@
 {
   "name": "alang-react-zoom",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Zoom SDK integration in React Typescript",
-  "main": "index.ts",
+  "main": "dist/cjs/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rollup": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,21 @@
   "bugs": {
     "url": "https://github.com/alang-dev/react-zoom/issues"
   },
-  "homepage": "https://github.com/alang-dev/react-zoom#readme"
+  "homepage": "https://github.com/alang-dev/react-zoom#readme",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^23.0.0",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@types/react": "^18.0.21",
+    "react": "^18.2.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-dts": "^4.2.3",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  }
 }
